@@ -182,6 +182,11 @@ nav ul li a:hover::after{
     width: 60px;
     height: 60px;
     margin: 10px;
+    transition: transform 0.5s;
+}
+
+.tab-contents ul.logos li img:hover{
+    transform: scale(1.1);
 }
 
 .tab-contents ul.logos {
