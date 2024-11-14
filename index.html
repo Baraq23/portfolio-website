@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="images/output-onlinepngtools.png" alt="Barrack" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-ellipsis" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
@@ -37,16 +39,21 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>In CSS, after is a pseudo-element that allows you to insert content after an element's content, commonly used for styling purposes without adding extra HTML elements. Here's how it works:</p>
+                    <p>I am currently an apprentice Software Engineer at @zone01kisumu Software Development Company in Kisumu, Kenya, where I am focused on building a strong foundation in software development. I am dedicated to learning and growing in this field, with the goal of becoming a skilled professional in the coming years. I’m always open to connecting with others, so feel free to reach out anytime.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experiences</p>
                         <p class="tab-links" onclick="opentab('projects')">Projects</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Golang</span></li>
-                            <li><span>JavaScript</span></li>
+                        <ul class="logos">
+                            <li><img src="logos/css3-original-wordmark.svg" alt="css3" title="css3"></li>
+                            <li><img src="logos/go-logo.png" alt="golang" title="go-lang"></li>
+                            <li><img src="logos/js.svg" alt="JavaScript" title="JavaScript"></li>
+                            <li><img src="logos/html5.svg" alt="HTML5" title="html5"></li>
+                            <li><img src="logos/git.svg" alt="git" title="git"></li>
+                            <li><img src="logos/linux.svg" alt="linux" title="linux"></li>
+                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -69,26 +76,32 @@
 
     <div class="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">Projects</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-globe"></i>
-                    <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam esse quos accusantium. Obcaecati voluptatum, quo, laboriosam nemo beatae officia autem aperiam excepturi libero dignissimos sunt suscipit, alias iusto laudantium.</p>
-                    <a href="#">learn more</a>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>ASCII Art Program</h2>
+                    <p>This project is an ASCII art program implemented in Go. It takes a string as input and outputs a graphic representation of the string using ASCII characters.</p>
+                    <a href="https://github.com/Baraq23/ascii-art" class="btn">learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Software Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam esse quos accusantium. Obcaecati voluptatum, quo, laboriosam nemo beatae officia autem aperiam excepturi libero dignissimos sunt suscipit, alias iusto laudantium.</p>
-                    <a href="#">learn more</a>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Number Guesser</h2>
+                    <p>Number Guessing Game in JavaScript, using functions and array methods to process inputs, display data, and evaluate guesses. This project strengthened my JavaScript and web development skills.</p>
+                    <a href="https://barrackproject.netlify.app/" class="btn">Play Game</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam esse quos accusantium. Obcaecati voluptatum, quo, laboriosam nemo beatae officia autem aperiam excepturi libero dignissimos sunt suscipit, alias iusto laudantium.</p>
-                    <a href="#">learn more</a>
+                    <h2>Go-Reloaded </h2>
+                    <p>Text Completion and Auto-Correction Tool built in Go, focusing on string manipulation and utilizing Go’s data structures to enhance text editing and correction capabilities. This project strengthened my skills in Go and advanced my understanding of efficient text processing.</p>
+                    <a href="https://learn.zone01kisumu.ke/git/barraotieno/go-reloaded">learn more</a>
                 </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Linear Stats</h2>
+                    <p>This program reads data from a txt file which contains data points at each line and outputs the linear regression line and the Pearson correlation coefficient. </p>
+                    <a href="#">learn more</a>
+                </div>                
             </div>
         </div>
     </div>
@@ -133,23 +146,27 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><a href="mailto:barrackotieno160@gmail.com"><i class="fa-duotone fa-solid fa-paper-plane"></i>barrackotieno160@gmail.com</a></p>
+                <p><a href="mailto:barrackotieno160@gmail.com"><i class="fa-duotone fa-solid fa-paper-plane"></i>Email</a></p>
                 <p><i class="fa-duotone fa-solid fa-phone"></i>+254704726904</p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin" style="color: #e66100;"></i></a>
-                    <a href=""></a>
-                    <a href=""><i class="fa-brands fa-square-github" style="color: #e66100;"></i></a>
+                    <a href="https://www.linkedin.com/in/barrack-kope-064a43244/"><i class="fa-brands fa-linkedin" style="color: #e66100;"></i></a>
+                    <a href="https://www.github.com/Baraq23"><i class="fa-brands fa-square-github" style="color: #e66100;"></i></a>
                 </div>
+                <a href="images/Barrack_ICT_CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" name="text" placeholder="Your Name" required>
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="example@gmail.com" required>
-                    <textarea name="message" rows="6" placeholder="Your message..."></textarea>
-                    <button type="submit">Submit</button>
+                    <textarea name="message" rows="6" placeholder="Your message..." required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg">hello<i class="fa-duotone fa-solid fa-loader fa-spin-pulse"></i></span>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2024, Barrack. <i class="fa-duotone fa-solid fa-cards"></i></p>
     </div>
 </div>
 
@@ -171,6 +188,36 @@
             event.currentTarget.classList.add('active-link')
             document.getElementById(tabname).classList.add("active-tab")
         }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+        function closeMenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzvs-uFiwkiCqck9Jb3tXUni5wyncIt0KbfXsQR2KLXlGoaeRob7wtL612EfS6N4mUC/exec'
+
+        const form = document.forms['submit-to-google-sheet']
+        const msg =  document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                    form.reset()
+                }, 5000)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 </html>
