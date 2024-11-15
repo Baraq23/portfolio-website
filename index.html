@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Barrack's | Portfolio</title>
+    <link rel="icon" href="logos/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fd22693b32.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        <div class="container">
+        <div class="container home-page">
             <nav>
-                <img src="images/output-onlinepngtools.png" alt="Barrack" class="logo">
+                <div class="nav-content">
+                    <img src="images/output-onlinepngtools.png" alt="Barrack" class="logo">
                 <ul id="side-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#project-description">Projects</a></li>
+                    <li><a href="#portfolio">Events</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-x" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-ellipsis" onclick="openMenu()"></i>
+                </div>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
@@ -35,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/gdg1-removebg-preview.png" alt="">
+                    <img src="images/zone01.JPG" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -47,7 +50,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul class="logos">
-                            <li><img src="logos/css3-original-wordmark.svg" alt="css3" title="css3"></li>
+                            <li><img src="logos/css3.svg" alt="css3" title="css3"></li>
                             <li><img src="logos/go-logo.png" alt="golang" title="go-lang"></li>
                             <li><img src="logos/js.svg" alt="JavaScript" title="JavaScript"></li>
                             <li><img src="logos/html5.svg" alt="HTML5" title="html5"></li>
@@ -58,14 +61,16 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>March 2024 - present</span><br>Apprentice Software Developer Apprentice | Zone01 Kisumu.</li>
+                            <li><span>March 2024 - present</span><br>Apprentice Software Developer | Zone01 Kisumu.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="projects">
                         <ul>
-                            <li><span>Ascii-Art</span><br>String manipulation using Go.</li>
-                            <li><span>Groupie-Tracker</span><br>Fetching data and diaplying in web page using Go(for backend), HTML and CSS.</li>
+                            <li><span>Ascii-Art</span><br>Translating Ascii characters into Graphics (String manipulation and data structure).</li>
+                            <li><span>Go-Reloaded </span><br>Auto-Correction tool using Go(String manipulation).</li>
+                            <li><span>Number Game</span><br>Understanding functions and array in JavaScript</li>
                         </ul>
+                        <a href="#project-description" class="btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +79,7 @@
 
     <!-- -------------------Sevices-------------------------------- -->
 
-    <div class="services">
+    <div id="project-description">
         <div class="container">
             <h1 class="sub-title">Projects</h1>
             <div class="services-list">
@@ -93,7 +98,7 @@
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Go-Reloaded </h2>
-                    <p>Text Completion and Auto-Correction Tool built in Go, focusing on string manipulation and utilizing Go’s data structures to enhance text editing and correction capabilities. This project strengthened my skills in Go and advanced my understanding of efficient text processing.</p>
+                    <p>Text Auto-Correction Tool built in Go, focusing on string manipulation and utilizing Go’s data structures to enhance text editing and correction capabilities. This project strengthened my skills in Go and advanced my understanding of efficient text processing.</p>
                     <a href="https://learn.zone01kisumu.ke/git/barraotieno/go-reloaded" class="btn">learn more</a>
                 </div>
                 <div>
@@ -109,34 +114,34 @@
 <!-- -----------------------Portfolio--------------------- -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Events</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/gdg2.jpg" alt="">
+                <img src="images/gdg-kisumu.jpg" alt="gdg">
                 <div class="layer">
-                    <h3>GDG Kisumu Meetup</h3>
-                    <p>Lorem iagni magnam deleniti facere porro numquam nostrum excepturi architecto quos.</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>GDG Kisumu Meetup | 2024</h3>
+                    <p>Google Developer Group(GDG) meet up at the University of Nairobi (UON) in Kisumu, Kenya.</p>
+                    <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
                 </div>
             </div>
             <div class="work">
-                <img src="images/gdg2.jpg" alt="">
+                <img src="images/hacker1.JPG" alt="hackerthon">
                 <div class="layer">
-                    <h3>Fire Side Tech Talk</h3>
-                    <p>Lorem iagni magnam deleniti facere porro numquam nostrum excepturi architecto quos.</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Zone01 Kisum Hackerthon | August, 2024 </h3>
+                    <p>The Zone01 Kisumu Hackerthon was a three day hackerthon that was organized and and hosted by Zone01 Kisumu, in August of 2024.</p>
+                    <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
                 </div>
             </div>
             <div class="work">
-                <img src="images/gdg1.jpg" alt="">
+                <img src="images/gophers-challenge.jpg" alt="">
                 <div class="layer">
-                    <h3>Kisumu Gophers Meetup</h3>
-                    <p>Lorem iagni magnam deleniti facere porro numquam nostrum excepturi architecto quos.</p>
-                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Kisumu Gophers Meetup | 2024</h3>
+                    <p>Kisumu gopher is a community where Go programmer are part of in Kisumu. We meet every first saturday of every month to share, learn go concepts and network amongest ourselves.</p>
+                    <!-- <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <!-- <a href="#" class="btn">See more</a> -->
     </div>
 </div>
 
@@ -161,12 +166,12 @@
                     <textarea name="message" rows="6" placeholder="Your message..." required></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg">hello<i class="fa-duotone fa-solid fa-loader fa-spin-pulse"></i></span>
+                <span id="msg"><i class="fa-duotone fa-solid fa-loader fa-spin-pulse"></i></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright &copy; 2024, Barrack. <i class="fa-duotone fa-solid fa-cards"></i></p>
+        <p>Copyright &copy; 2024, <span style="color: #ff004f; font-weight: 300;">Barrack</span>. </p>
     </div>
 </div>
 
